@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  <!-- change the name! -->
+  <title>{{fullName}} </title>
+  <!-- link to the master cascading stylesheet -->
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="name" content="[Full Name]'s Portfolio">
+  <!-- remove the following line after you are happy with your Website
+       so that search engines will index it! -->
+  <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body ng-app="portfolioApp" ng-controller="appController" >
+
+  <!--
+<video autoplay muted loop id="myVideo"><source src="videos/video.mp4" type="video/mp4"></video><br>
+  -->
+  <div id="app">
+    <div id="navbar">
+      <a href="#page3">Projects</a>
+      <a href="#page2">About</a>
+      <a href="#page1">Home</a>
+    </div>
+    
+    <div class="page1" id="page1">
+      
+      <div>
+        <!-- <img class="hero" src="images/banner.jpg" width="100%" alt="banner"> -->
+        <!-- change this to your name -->
+        <div id="filler_small"></div>
+        <h1 ng-bind="fullName"></h1>
+        
+        <div id="filler_small"></div>
+        <img src="images/joelanto.jpg" alt="joelanto" id="joelanto_img">
+        <br>
+        <p ng-bind="aboutMe"></p>
+        <div id="filler_big">
+          <div id="contact">
+        
+          <a href="https://github.com/joelantogit" id="github_link" target="_blank" ><img class="contact_class" src="./images/Octocat.png" alt="github profile"></a>
+          <a href="https://www.linkedin.com/in/joelantochan/" id="linkedin_link" target="_blank" ><img class="contact_class"  src="./images/linkedin.png" alt="linkedin profile"></a>
+          <a href="https://wa.me/6582208345" id="whatsapp_link" target="_blank" ><img class="contact_class"  src="./images/whatsapp.gif" alt="whatsapp profile"></a>          
+          </div>
+        </div>
+
+      </div>
+  
+      
+  
+    </div>
+    <div id="page2">
+
+
+  </div>
+
+  
+<br>
+
+  <!-- add a section called "About Me" -->
+  <h2 ng-bind="aboutMe[0]" ></h2>
+
+  <!-- add a repeat loop to show all the p tags-->
+  <div>
+    <p>[Placeholder for AboutMe items]</p>
+  </div>
+
+  <h2>Work Samples</h2>
+  <!-- add a repeat loop to generate the img tags -->
+  <div ng-repeat="thumbNail in thumbNails">
+    <img src="images/{{thumbNail}}" alt="{{thumbNail}}"\>
+  </div>
+
+  <h2>Contact</h2>
+
+  <!-- add a link to let visitor to send you an email easily! -->
+  <p>Email: <a href="mailto:{{emailID}}" target="_blank">{{emailID}} </a></p>
+
+  <!-- don't post personal physical address, phone number or other personal information on the web! -->
+
+  <!-- add a form to demonstrate data binding -->
+  <form name="helloForm">
+    What is your name? <input type="text" name="visitorName" required ng-model="visitorName">
+  </form>
+
+  <!-- conditionally shows the thank you message -->
+  <h2>Thank you for visiting! {{visitorName}} </h2>
+
+  <!-- link to the controller script here -->
+  <script src="angular/app.js"></script>
+</body>
+
+<footer>
+  <hr>
+  <!-- change the name to yours! -->
+  <code>Copyright (C) 2022 {{fullName}} </code>
+</footer>
+
+</html>

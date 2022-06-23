@@ -1,0 +1,206 @@
+/* Cascading stylesheet for the website */
+
+html {
+  height: 100%;
+}
+
+.page1 {
+  /* The image used */
+  background-image: url("../images/pag1_bg.gif"); 
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 200px black;
+  
+  border: 0px;
+  padding: 0px;
+  margin:0px;
+  border-top: 46.5px;
+}
+
+ #page1  div {
+
+  margin-top: 0px;
+  border: .01em;
+} 
+
+#page1 #filler_big{
+  height :170px;
+}
+
+#page1 #filler_small{
+  height: 50px;
+}
+
+#contact {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding : 20px;
+}
+
+
+
+.contact_class {
+  width:60px;
+  height:60px;
+  border-radius: 30px;
+  
+}
+.contact_class:hover {
+  height: 80px;
+  width: 80px;
+}
+
+#contact a {
+  width: 20px;
+  height: 20px;
+  
+}
+#page1 p{
+  color: #f2f2f2;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#joelanto_img{
+
+  height: 120px;
+  width: 100px;
+  border-radius: 40px;
+  
+}
+
+
+#myVideo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 0px;
+  padding: 0px;
+  margin:0px;
+  
+}
+
+a {
+    color: blue; /* set the text color to blue here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+}
+
+a:hover {
+  color: red; /* set the text color to red here */
+  text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+}
+
+body {
+  background-color: rgb(0, 0, 0); /* set the background color here */
+  color: black; /* set the text color to black here */
+  font-family: Arial, Helvetica, sans-serif;  /* set the font here */
+  text-align: center;
+  height: 100%;
+  margin:0px;
+  border: 0px;
+  padding: 0px;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  color: white;
+}
+
+h2 {
+  color: #075AAB; /* set the text color of to #075AAB here */
+  /* set both the bottom margin and top margin to 2.5rem here */
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+h5 {
+  margin-top: 0.5rem;
+}
+
+hr {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.halftone {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.hero {
+  width: 75%;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  float:right;
+
+}
+
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  
+}
+
+#navbar a:hover {
+  border-right: 1px solid rgb(102, 102, 94);
+  border-left: 1px solid rgb(102, 102, 94);
+  border-bottom: 1px solid rgb(102, 102, 94);;
+  font-size: 120%;
+  box-shadow: inset 0 0 200px black;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#app {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
